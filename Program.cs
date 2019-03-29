@@ -11,12 +11,12 @@ namespace Arrays
         static void Main(string[] args)
         {
             Console.WriteLine("One-dimensional array:");
-            Calculation[] A = { new Calculation(1, 2), new Calculation(2, 5) };
+            Calculation[] A = { new Calculation(1, 2), new Calculation(2, 5) }; //створення одновимірного масиву 
             foreach (Calculation f in A) Console.WriteLine(f);
             Console.ReadKey();
 
             Console.WriteLine("Two-dimensional array:");
-            int[,] unit = { { 0, 1, 2 }, { 3, 4, 5 } };
+            int[,] unit = { { 0, 1, 2 }, { 3, 4, 5 } }; //створення двохвимірного масиву
             for (int i = 0; i < unit.GetLength(0); ++i)
             {
                 for (int j = 0; j < unit.GetLength(1); ++j)
@@ -26,7 +26,7 @@ namespace Arrays
             }
 
             Console.WriteLine("Three-dimensional array:");
-            int[,,] A3 = {
+            int[,,] A3 = {            //створення тривимірного масиву
                     {{12, 2, 8}},
                     {{14, 5, 2}},
                     {{3, 26, 9}},
@@ -49,7 +49,7 @@ namespace Arrays
 
             Console.WriteLine("\n");
             Console.WriteLine("Jagged array:");
-            int[][] value = new int[5][];
+            int[][] value = new int[5][];    //створення зубчастого масиву
             value[0] = new int[] { 1, 2 };
             value[1] = new int[] { 1, 2, 3 };
             value[2] = new int[] { 1, 2, 3, 4, 5 };
@@ -77,7 +77,7 @@ namespace Arrays
             Console.WriteLine("Array Copy:");
             int[] numbers = { -4, -3, -2, -1, 0, 1, 2, 3, 4 };
             int[] numbers2 = new int[5];
-            Array.Copy(numbers, 2, numbers2, 0, 5);
+            Array.Copy(numbers, 2, numbers2, 0, 5);  // копіювання масиву
             foreach (int number in numbers2)
             {
                 Console.Write($"{number} \t");
@@ -90,8 +90,7 @@ namespace Arrays
             {
                 Console.Write(massif[i] + " ");
             }
-            Array.Sort(massif);
-            //Array.Reverse(masiv);
+            Array.Sort(massif);   //сортування масиву
             Console.WriteLine();
             for (int i = 0; i < massif.Length; i++)
             {
