@@ -11,7 +11,7 @@ namespace Arrays
         static void Main(string[] args)
         {
             Console.WriteLine("One-dimensional array:");
-            Calculation[] A = { new Calculation(1, 2), new Calculation(2, 5) };
+            Calculation[] A = { new Calculation(1, 2), new Calculation(2, 5) };  //створенння одновимірного масиву
             foreach (Calculation f in A) Console.WriteLine(f);
             Console.ReadKey();
 
